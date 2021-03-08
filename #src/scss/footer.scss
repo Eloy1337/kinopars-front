@@ -1,0 +1,36 @@
+.footer {
+	&__body {
+		height: 80px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		> * {
+			padding: 0 20px;
+		}
+	}
+
+	&__logo {
+		// margin: 0 auto;
+		// text-align: center;\
+		overflow: hidden;
+		flex-basis: 100px;
+		img {
+			margin: 0 auto;
+			text-align: center;
+			// width: 100px;
+		}
+	}
+
+	&__contacts {
+		a {
+			display: inline-block;
+			margin: 0 5px;
+			img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+}

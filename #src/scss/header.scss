@@ -1,0 +1,118 @@
+.header {
+	@media (max-width: $md3 + px) {
+		margin-bottom: 25px;
+	}
+
+	&__body {
+		min-height: 80px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		> * {
+			flex: 0 0 33.3%;
+		}
+
+		@media (max-width: $md3 + px) {
+			flex-wrap: wrap;
+			> *:not(:nth-child(2)) {
+				flex: 1 0 50%;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__form {
+		form {
+			input {
+				position: relative;
+				background-color: #171716;
+				width: 81%;
+				border: 2px solid #df5a00;
+				border-radius: 15px;
+				height: 30px;
+				padding: 14px;
+				font-size: 20px;
+				letter-spacing: 3px;
+				color: #df5a00;
+				outline: none;
+				background-image: url("../img/icons/icons.svg#search");
+				background-repeat: no-repeat;
+				background-position: 97% 50%;
+				background-size: 22px;
+
+				&::placeholder {
+					color: #df5a00;
+				}
+
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					background-color: white;
+					right: 0;
+					// bottom: 3px;
+					// background-image: url("../img/icons/icons.svg#search");
+					background-repeat: no-repeat;
+					width: 28px;
+					height: 500px;
+				}
+			}
+		}
+
+		@media (max-width: $md3 + px) {
+			order: 3;
+			form input {
+				width: 100%;
+			}
+		}
+	}
+
+	&__logo {
+		margin: 0 auto;
+		text-align: center;
+		overflow: hidden;
+		flex: 0 0 100px;
+		img {
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		@media (max-width: $md3 + px) {
+			order: 1;
+			padding: 0 10px;
+			img {
+				text-align: left;
+				margin: 0;
+			}
+		}
+	}
+
+	&__sign {
+		position: relative;
+		padding-top: 10px;
+		font-size: 24px;
+		padding-right: 37px;
+		letter-spacing: 4.2px;
+		text-align: right;
+
+		a {
+			color: #df5a00;
+			text-decoration: none;
+		}
+
+		a::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: 3px;
+			background-image: url("../img/icons/icons.svg#user");
+			background-repeat: no-repeat;
+			width: 28px;
+			height: 28px;
+		}
+
+		@media (max-width: $md3 + px) {
+			order: 2;
+		}
+	}
+}
