@@ -2,20 +2,40 @@
 <html lang="en">
 
 <head>
-	@@include("_head.html", {
-	"title": "Главная",
-	})
+	<head>
+	<title>Поиск</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 </head>
 
 <body>
 	<div class="wrapper">
-		@@include("_header.html", {})
+		<header class="header">
+	<div class="container">
+		<div class="header__body">
+			<div class="header__form">
+				<form action="/search" method="GET">
+					<input type="text" name="id" placeholder="Найти...">
+				</form>
+			</div>
+			<div class="header__logo">
+				<img src="img/logo.svg" alt="LOGO">
+			</div>
+			<div class="header__sign">
+				<a href="#">ВОЙТИ</a>
+			</div>
+		</div>
+	</div>
+</header>
 		<main class="main">
 			<section class="category">
 				<div class="container">
 					<div class="category__section">
 						<div class="category__title title">
-							<span>ПОПУЛЯРНЫЕ ФИЛЬМЫ</span>
+							<span>Результаты поиска</span>
 						</div>
 						<div class="category__list">
 							<div class="category__item item">
@@ -50,8 +70,8 @@
 							<button>Смотреть еще</button>
 						</div>
 					</div>
-					<div class="category__section">
-						<div class="category__title title">
+					<!-- <div class="category__section">
+						<div class="category__title">
 							<span>ПОПУЛЯРНЫЕ СЕРИАЛЫ</span>
 						</div>
 						<div class="category__list">
@@ -88,7 +108,7 @@
 						</div>
 					</div>
 					<div class="category__section">
-						<div class="category__title title">
+						<div class="category__title">
 							<span>НОВЫЕ ФИЛЬМЫ</span>
 						</div>
 						<div class="category__list">
@@ -123,14 +143,34 @@
 						<div class="category__button">
 							<button>Смотреть еще</button>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</section>
 		</main>
-		@@include("_footer.html", {})
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__body">
+			<div class="footer__logo">
+				<img src="img/logo.svg" alt="LOGO">
+			</div>
+			<div class="footer__contacts">
+				<a href="https://www.instagram.com/todaywillnotend/" target="_blank" title="Instagram">
+					<img src="img/icons/icons.svg#instagram" alt="instagram">
+				</a>
+				<a href="https://vk.com/eloy_am" target="_blank" title="VK">
+					<img src="img/icons/icons.svg#vk" alt="vk">
+				</a>
+				<a href="http://t.me/Fibonacci0112" target="_blank" title="Telegram">
+					<img src="img/icons/icons.svg#telegram" alt="Telegram">
+				</a>
+
+			</div>
+		</div>
 	</div>
-	<!-- @@include("_popup.html", {}) -->
-	<!-- @@include("_js.html", {}) -->
+</footer>
+	</div>
+	
+	
 </body>
 
 </html>

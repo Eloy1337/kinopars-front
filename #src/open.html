@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	@@include("_head.html", {
+	"title": "Просмотр",
+	})
+</head>
+
+<body>
+	<div class="wrapper">
+		@@include("_header.html", {})
+		<main class="main">
+			<section class="player">
+				<div class="container">
+					<div class="player__section">
+						<div class="player__title title">
+							<span>Парни со стволами</span>
+						</div>
+						<div class="player__description">
+							<span>2016, США, Драмы, Комедия, Криминал</span>
+						</div>
+						<div class="player__timer">
+							<span>114 мин</span>
+						</div>
+						<div class="player__item">
+							<div class="player__buttons">
+								<button class="player__buttons--active">Просмотр</button>
+								<button class="">Трейлер</button>
+							</div>
+							<div class="player__containers">
+								<div class="player__container">
+									<video width="480" controls>
+										<source
+											src="https://edge-de-70.streambox.in/pd/kinopub/aWQ9NDIxNjY2OzE4Mzk3ODY3NzE7MTAxNDk0MjE7MTYxNTIzNjAyNCZoPTlrY19KWnN1SXVmeFhQcWlSRlk0WHcmZT0xNjE1MzIyNDI0/7/80/sluTJYvqEqq8QwO1W.mp4">
+									</video>
+								</div>
+								<div class="player__container hidden">
+									<video width="480" controls>
+										<source
+											src="https://cdn.streambox.in/pd/kinopub/aWQ9NDIxNjY2OzE4Mzk3ODY3NzE7MTAxNDk0MjE7MTYxNTIzOTM1NiZoPWxPVXNzdWdjLWtTZUxtNk5CWVNIZHcmZT0xNjE1MzI1NzU2/trailers/5/3a/69868.mp4?loc=de">
+									</video>
+								</div>
+							</div>
+							<div class="select-list">
+								<div class="season-list">
+									<span>Сезон:</span>
+									<select onchange="window.location.href = this.options[this.selectedIndex].value">
+										<option value="">Выбрать сезон</option>
+										<option value="https://example.com/?brand=1">1</option>
+										<option value="https://example.com/?brand=2">2</option>
+										<option value="https://example.com/?brand=3">3</option>
+										<option value="https://example.com/?brand=4">4</option>
+										<option value="https://example.com/?brand=5">5</option>
+										<option value="https://example.com/?brand=6">6</option>
+										<option value="https://example.com/?brand=7">7</option>
+										<option value="https://example.com/?brand=8">8</option>
+										<option value="https://example.com/?brand=9">9</option>
+										<option value="https://example.com/?brand=10">10</option>
+									</select>
+								</div>
+								<div class="episode-list">
+									<span>Серия:</span>
+									<select onchange="window.location.href = this.options[this.selectedIndex].value">
+										<option value="">Выбрать серию</option>
+										<option value="https://example.com/?brand=1">1</option>
+										<option value="https://example.com/?brand=2">2</option>
+										<option value="https://example.com/?brand=3">3</option>
+										<option value="https://example.com/?brand=4">4</option>
+										<option value="https://example.com/?brand=5">5</option>
+										<option value="https://example.com/?brand=6">6</option>
+										<option value="https://example.com/?brand=7">7</option>
+										<option value="https://example.com/?brand=8">8</option>
+										<option value="https://example.com/?brand=9">9</option>
+										<option value="https://example.com/?brand=10">10</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="player__item">
+						<div class="player__buttons">
+							<button>Просмотр</button>
+							<button>Трейлер</button>
+						</div>
+						<div class="player__container">
+							<video width="480" controls>
+								<source
+									src="https://edge-de-70.streambox.in/pd/kinopub/aWQ9NDIxNjY2OzE4Mzk3ODY3NzE7MTAxNDk0MjE7MTYxNTIzNjAyNCZoPTlrY19KWnN1SXVmeFhQcWlSRlk0WHcmZT0xNjE1MzIyNDI0/7/80/sluTJYvqEqq8QwO1W.mp4">
+							</video>
+						</div>
+					</div> -->
+				</div>
+			</section>
+		</main>
+		@@include("_footer.html", {})
+	</div>
+	<!-- @@include("_popup.html", {}) -->
+	<!-- @@include("_js.html", {}) -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
